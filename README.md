@@ -9,12 +9,12 @@ Scripts folder should contain the relevant scripts that allow us to run the nume
     _Note:_ "turning on" parallelization is unfortunately rather inefficient, since the best way we found that does not run into segfault errors for large _(N, T)_ was to create the _A, r_ matrices in each of the workers, which overshadows the incredibly quick A* search time. However, the scripts run fairly quickly, without the need for much parallelization as we anticipated in the beginning.
 2. __A* Pathfinding Experiment__: In order to run the A* experiments, we can run the script _/scripts/AStar_sim.jl_ by the following:
 
-       julia --project /scripts/AStar_sim.jl
+       julia --project (path_to_CoexistenceControl.jl)/scripts/AStar_sim.jl
 
     This will automatically save the data in _/data/results_. If the experiment was experimental data, it will save the output txt & csv files with the appropriate dataset name under _/data/results/experimental_. If the experiment was synthetic data, it will save the output txt & csv files with the appropriate dataset name according to subfolders generated from the _(N, T)_, such as _/data/results/synthetic/n5_t3_.
 3. **Cross-Entropy Parameter Search**: In order to run the CEM parameter search, we can run the script _/scripts/params_CEM.jl_ by the following:
 
-       julia --project /scripts/params_CEM.jl
+       julia --project (path_to_CoexistenceControl.jl)/scripts/params_CEM.jl
        
     This will automatically save the data in _/data/dataset/synthetic_, as it will be the parameter data we will use for the A* experiments.
 
