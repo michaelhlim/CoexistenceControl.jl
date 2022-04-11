@@ -1,0 +1,4 @@
+/plotting/*
+/scripts/slurm/*
+/scripts/test/*
+*.DS_Store

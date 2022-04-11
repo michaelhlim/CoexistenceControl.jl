@@ -1,0 +1,50 @@
+==================================
+Setup:
+N: 5
+T: 1
+add: 1.0
+del: 3.0
+nat: 0.1
+temp: 5.0
+Source: Data set
+Data set: Maynard
+Species names: ["CO", "DE", "LO", "PA", "SP"]
+Species label: [1, 2, 3, 4, 5]
+Temperature names: ["17"]
+Temperature label: [1]
+
+==================================
+Statistics:
+Proportion of candidate states: 0.25
+Candidate states: 8
+Total states: 32
+Total candidate pairs evaluated: 56
+Total natural transitions: 24
+
+Path length diff avg: 0.03571428571428571
+Path length diff val: [0, -1, 1]
+Path length diff count: [52, 1, 3]
+
+Cost improvement avg: 1.0232142857142856
+Cost improvement val: [0.0, 5.8, 2.9, 1.9, 5.9]
+Cost improvement count: [40, 1, 11, 1, 3]
+
+==================================
+A matrices:
+(T = 1)
+5×5 Matrix{Float64}:
+ -8.1   -4.8   -2.5  -2.8   -0.8
+ -5.0  -16.1   -1.8  -2.3   -3.4
+ 35.7   19.9  -24.7  41.1    1.1
+ -5.1   -4.0   -3.4  -8.2   -1.6
+ -2.7   -8.1   -4.2  -2.6  -20.6
+
+==================================
+r vectors:
+(T = 1)
+5-element Vector{Float64}:
+  3.7
+  1.2
+ 72.4
+ 29.7
+  1.1
